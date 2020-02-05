@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>README</title>
+   <style type="text/css">
+
+			body{
+				font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+				margin: 7px;
+   				}
+
+   </style>
+</head>
+<body>
+  <h1>FRESH TOMATOES MOVIE TRAILERS</h1>
+ <hr>
+<p> FRESH TOMATOES MOVIE TRAILERS is a web application made using object oriented Python programming. It includes the server side code to store a list of my favorite movies, including box art imagery and movie trailer URL.</p>
+<br>
+<br>
+<h2>INSTALL</h2>
+<p>This application was designed using <strong>Python 2</strong> So you must have it installed, in case you already don't have. The link to install Python 2.7.13 is given below</p>
+<a href="https://www.python.org/downloads/">Python 2.7.13 INSTALL</a>
+<br>
+<br>
+<h2>DIRECTORY STRUCTURE</h2>
+<p>The Movie_Trailer_Site folder consists of 3 files :</p>
+<ul>
+	<li><strong>media.py :</strong> It consists of the class <strong>Movie</strong> in which we define 2 functions, the <strong>'__init__'</strong> function and the <strong>'show_trailer' </strong> function.The __init__ function is used to initialise pieces of info like title,storyline etc.The show_trailer function makes use of the open function defined inside webbrowser module to open the youtube trailer of the movie whose instance is used to call this method.</li><br>>
+	<li><strong>fresh_tomatoes.py :</strong> This file has a function <strong>'open_movies_page'</strong>.This function takes in a list of movies as input,and as 	output it creates and opens an html page or a website that shows the movies that we gave it in the another file,entertainment.py</li><br>
+	<li><strong>entertainment.py :</strong> In this file we import the above two files- fresh_tomatoes.py and media.py .We create our movie instances like toy_story,avatar etc At the end of this file,we call the function <strong>'open_movies_page'</strong> defined inside the file fresh_tomatoes.py .In this function , we pass an array of movies(instances) that we created as arguments.When we run this program , we get our Movie trailer website.</li>
+</ul> <br><br>
+<h2>USAGE</h2>
+<p>Run the file entertainment.py to open the website.To make efficient use of this code and to play the youtube trailers<strong> click on the respective posters of movies</strong></p>
+<br>
+<h2>LICENSE</h2>
+<p>The contents of this application is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution License</a></p> 
+
+<hr>
+<br>
+</body>
+</html>
